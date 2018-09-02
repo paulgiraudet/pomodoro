@@ -12,11 +12,44 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5 mx-auto">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="typeOfTimer text-center">Break Length</p>
+
+            <div class="countingBreak d-flex justify-content-around">
+              <i class="fas fa-minus"></i>
+              <p id="breakLength">5</p>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <p class="typeOfTimer text-center">Session Length</p>
+
+            <div class="countingSession d-flex justify-content-around">
+              <i class="fas fa-minus"></i>
+              <p id="sessionLength">25</p>
+              <i class="fas fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 mx-auto">
+      </div>
+    </div>
+  </div>
 
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>

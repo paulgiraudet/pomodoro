@@ -97,8 +97,27 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+  background:rgba(50,50,50,1);
+  color:white;
+}
 
+.containDisplayTime{
+  border:3px solid forestgreen;
+  height:250px;
+  width:250px;
+  border-radius:100%;
+}
 
+.displayTime{
+  height:240px;
+  width:240px;
+  border-radius:100%;
+}
+
+.buttonPlay{
+  color:forestgreen;
+}
 
 
 

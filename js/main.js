@@ -7,6 +7,8 @@ var id ="";
 
 $(document).ready(function(){
 
+  // $("#reset").hide(this);
+
 $("#timerType").text
   function timerOn(count){
     var typeOfTimer = $("#timerType").text();
@@ -68,18 +70,29 @@ $("#timerType").text
 
 
   $("#controlTimer").click(function(){
+    $("button").toggle();
     if(switchOnOff === 1){
       switchOnOff=0;
       $("#controlTimer").removeClass("fa-play").addClass("fa-pause");
       timerOn();
       id=setInterval(timerOn,1000);
-
+      // $("#reset").show(this);
     }
     else if(switchOnOff === 0){
       switchOnOff=1;
       $("#controlTimer").removeClass("fa-pause").addClass("fa-play");
       clearInterval(id);
+      // $("#reset").hide(this);
     }
+  })
+
+  $("#reset").click(function(){
+    switchOnOff=1;
+    $("#controlTimer").removeClass("fa-pause").addClass("fa-play");
+    clearInterval(id);
+    seconds=0;
+    sessionCount=temporaryCount;
+    $("#timer").text(sessionCount);
   })
 
 });
